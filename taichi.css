@@ -1,0 +1,48 @@
+/*
+* @Author: Administrator
+* @Date:   2018-03-08 20:38:24
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-03-08 21:32:02
+*/
+body{
+	background: red;
+}
+.box{
+	width: 200px;
+	height: 400px;
+	background: #000;
+	margin: 0 auto;
+	border-right: 200px solid #fff;
+	border-radius: 50%;
+	position: relative;
+	transition: 3s ease;
+	/* 过度 控制动画过程 方式  可用cubic-bezier*/
+}
+.box1{
+	width: 80px;
+	height: 80px;
+	background: #000;
+	border: 60px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+.box2{
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	border: 60px solid #000;
+	border-radius: 50%;
+	position: absolute;
+	bottom:0px;
+	left: 50%;
+}
+.box:hover{
+	/* 鼠标移动转换颜色background: pink; */
+	transform: rotate(60deg);
+	/* 旋转  度  deg */
+	transition: 3s;
+
+}
+
